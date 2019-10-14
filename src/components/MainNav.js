@@ -3,15 +3,17 @@ import Nav from './Nav';
 
 function MainNav() {
     const [nav, setNav] = useState('');
+    const [routeLink, setRouteLink] = useState('');
 
     return (
         <>
-            <Nav nav='Mac' />
-            <Nav nav='iPad' />
-            <Nav nav='iPhone' />
-            <Nav nav='Watch' />
-            <Nav nav='TV' />
-            <Nav nav='Music' />
+            <Nav exact routeLink='/' nav='Home' />
+            <Nav routeLink='/mac' nav='Mac' />
+            <Nav routeLink='/ipad' nav='iPad' />
+            <Nav routeLink='/iphone' nav='iPhone' />
+            <Nav routeLink='/watch' nav='Watch' />
+            <Nav routeLink='/tv' nav='TV' />
+            <Nav routeLink='/music' nav='Music' />
         </>
     )
 }

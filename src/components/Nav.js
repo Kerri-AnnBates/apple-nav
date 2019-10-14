@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav(props) {
 
-    const { nav } = props;
+    const { nav, routeLink } = props;
 
     return(
-        <a href='#'>{nav}</a>
+        <Link to={routeLink}>{nav}</Link>
     )
 }
 
