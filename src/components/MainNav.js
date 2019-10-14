@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import Nav from './Nav';
 
 function MainNav() {
-    const [nav, setNav] = useState('');
-    const [routeLink, setRouteLink] = useState('');
 
     return (
-        <>
+        <div className='main-nav'>
             <Nav exact routeLink='/' nav='Home' />
             <Nav routeLink='/mac' nav='Mac' />
             <Nav routeLink='/ipad' nav='iPad' />
@@ -14,7 +12,7 @@ function MainNav() {
             <Nav routeLink='/watch' nav='Watch' />
             <Nav routeLink='/tv' nav='TV' />
             <Nav routeLink='/music' nav='Music' />
-        </>
+        </div>
     )
 }
 
