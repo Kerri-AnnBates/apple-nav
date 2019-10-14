@@ -5,8 +5,8 @@ function Mac(props) {
     return (
         <>
             <ul>
-                <li>iMac</li>
-                <li>iMac Pro</li>
+                <li>MacBook Air</li>
+                <li>MacBook Pro</li>
             </ul>
         </>
     )
