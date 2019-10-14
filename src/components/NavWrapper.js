@@ -1,9 +1,10 @@
 import React from 'react';
+import MainNav from './MainNav';
 
 function NavWrapper() {
     return (
         <div className="nav-wrapper">
-            nav warpper
+            <MainNav className="main-nav" />
         </div>
     )
 }
